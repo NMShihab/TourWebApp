@@ -6,3 +6,37 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  color: gray;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh; /*Take 95% of viewport*/
+  /* background-image: linear-gradient(
+      to right,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 131, 0.8)
+    ),
+    url("../img/background.jpg"); import image from img folder */
+  background-image: linear-gradient(
+      to right,
+      rgb(198, 255, 221, 0.8),
+      rgb(251, 215, 134, 0.8),
+      rgb(247, 121, 125, 0.8)
+    ),
+    url("../img/background.jpg"); /* import image from img folder*/
+  background-size: cover; /* Fit the image according to height*/
+  background-position: top; /* Top position never cropped */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); /* Make shape of header*/
+}
